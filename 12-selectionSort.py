@@ -1,6 +1,5 @@
 #Time - O(n^2)
 #Space - O(1)
-
 def selectionSort(arr):
     for i in range(len(arr)):
         min = float("inf")

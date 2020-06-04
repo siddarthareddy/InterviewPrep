@@ -10,7 +10,7 @@
 from random import randrange
 from treeUtil import Node, insert
 
-def findClosestValueBstR(tree, target):
+def findClosestValueBstRecursive(tree, target):
     return findClosestValueBstHelperR(tree, target, float("inf"))
 
 def findClosestValueBstHelperR(tree, target, closest):
@@ -26,7 +26,7 @@ def findClosestValueBstHelperR(tree, target, closest):
         return closest
 
 
-def findClosestValueBstI(tree, target):
+def findClosestValueBstIterative(tree, target):
     return findClosestValueBstHelperI(tree, target, float("inf"))
 
 def findClosestValueBstHelperI(tree, target, closest):
@@ -44,10 +44,10 @@ def findClosestValueBstHelperI(tree, target, closest):
     return closest
 
 def testR():
-    print(findClosestValueBstR(r, 5000))
+    print(findClosestValueBstRecursive(r, 5000))
 
 def testI():
-    print(findClosestValueBstI(r, 12345))
+    print(findClosestValueBstIterative(r, 12345))
 
 if __name__ == '__main__':
     r = Node(50)

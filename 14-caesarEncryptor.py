@@ -21,9 +21,12 @@ def encryptArr(string, key):
     alphabet = list("abcdefghijklmnopqrstuvwxyz")
     for letter in string:
         newLetters.append(getNewLetter(letter, key, alphabet))
-    return string == "".join(newLetters)
+    return "".join(newLetters)
 
 def getNewLetter(letter, key, alphabet):
     newLetterCode = alphabet.index(letter) + key
     return alphabet[newLetterCode] if newLetterCode <=25 else alphabet[-1 + newLetterCode % 25]
 
+if __name__ == "__main__":
+    a = "adsda"
+    print(encryptArr(a, 1))
