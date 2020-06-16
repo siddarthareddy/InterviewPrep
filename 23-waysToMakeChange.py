@@ -10,8 +10,10 @@ def waysToMakeChange(denoms, amt):
     return ways[amt]
 
 if __name__ == "__main__":
-    a = [1,5,10,25]
-    print(waysToMakeChange(a, 10))
-    a = [5,10]
-    print(waysToMakeChange(a, 9))
-    print(waysToMakeChange(a, 100))
+    # a = [1,5,10,25]
+    # print(waysToMakeChange(a, 10))
+    # a = [5,10]
+    # print(waysToMakeChange(a, 9))
+    # print(waysToMakeChange(a, 100))
+    a = [1,2]
+    print(waysToMakeChange(a, 3))
